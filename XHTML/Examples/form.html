@@ -1,0 +1,55 @@
+<?xml version = "1.1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!--Fig. 5.5 form.html-->
+<!--Form Design Example 1-->
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Internet and WWW How to Program -Forms</title>
+	</head>
+
+	<body>
+
+		<h1>Feedback Form</h1>
+
+		<p>Please fill out this form to help
+			us improve our site</p>
+
+			<!--this tag starts the form, gives the  -->
+			<!--method of sending information and the-->
+			<!--location of form scripts             -->
+			<form method = "post" action = "/cgi-bin/formail">
+
+				<p>
+					<!--Hidden inputs contain non-visual-->
+					<!--information						-->
+					<input type = "hidden" name = "recipent"
+						value = "deitel@deitel.com"/>
+					<input type = "hidden" name = "subject"
+						value = "feedback Form"/>
+					<input type = "hidden" name = "redirect"
+						value = "main.html"/>
+				</p>
+
+				<!--<input type = "text"> inserts a text box-->
+				<p><label>Name:
+						<input name = "name" type = "text" size = "25"
+						maxlength = "30"/>
+				</label></p>
+
+				<p>
+					<!--input types "submit" and "reset" insert-->
+					<!--buttons for submitting and clearing the-->
+					<!--form's contents						   -->
+					<input type = "submit" value = 
+						"Submit your Entries"/>
+					<input type = "reset" value = 
+						"Crear your Entries"/>
+				</p>
+
+			</form>
+
+	</body>
+</html>

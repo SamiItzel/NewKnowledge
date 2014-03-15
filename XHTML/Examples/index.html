@@ -1,0 +1,41 @@
+<?xml version ="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.0 Frameset//EN"
+	"http://www.w3.org/TR/XHTML1/DTD/xhtml1-frameset.dtd">
+
+<!--Fig. 5.9 index.html-->
+<!--XHTML Frames I     -->
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Internet and WWW How to program - Main</title>
+		<meta name = "keywords" content = "Webpage, design,
+			XHTML, tutorial, personal, help, index, form,
+			contact, feedback, list, links, frame, deitel" />
+
+		<meta name = "description" content = "This Web page will
+			help you learn the basics of XHTML and Web pages design
+			through the user of interactive examples
+			and instruction"/>
+
+	</head>
+
+	<!--The <frameset> tag sets the frame dimensions -->
+	<frameset cols = "110,*">
+
+	<!--frame elements specify which page-->
+	<!--are loaded into a given frame    -->
+	<frame name = "leftframe" src = "nav.html" />
+	<frame name = "main" src = "main.html"/>
+
+	<noframes>
+		<body>
+			<p>This page uses frames, but your browser does not
+				support them</p>
+
+			<p>Please, <a href="nav.html"> Follow this link to
+				browse our site without frame</a></p>
+		</body>
+	</noframes>
+
+	</frameset>
+</html>
