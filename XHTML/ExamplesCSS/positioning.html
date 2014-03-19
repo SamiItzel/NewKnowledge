@@ -1,0 +1,51 @@
+<?xml version = "1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<!--Absolute positioning of elements -->
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Relative Positioning</title>
+
+		<style type="text/css">
+
+			p       	{font-size: 1.3em;
+						  font-family: verdana, arial, sans-serif;}
+
+			span    	{color: red;
+						 font-size: .6em;
+						 height: 1em;}
+
+			.super  	{ position: relative;
+					 	 top: -1ex;}
+
+			.sub    	{ position: relative;
+					 	 bottom: -1ex;}
+
+			.shiftleft	{ position: relative;
+						 left: -1ex;}
+
+			.shiftright {position: relative;
+						 right: -1ex;}
+
+		</style>
+	</head>
+
+	<body>
+
+		<p>The text at the end of this sentence
+			<span class = "super">is in superscript</span>.</p>
+
+		<p>The text at the end of this sentence
+			<span class = "sub">is in subscrit</span>.</p>
+
+		<p>The text at the end of this sentence
+			<span class = "shiftleft">is shiftleft</span>.</p>
+
+		<p>The text at the end of this sentence
+			<span class = "shiftright">is shifted right</span>.</p>
+
+	</body>
+</html>
